@@ -1,45 +1,63 @@
-Beautiful Sum 📊
-Beautiful Sum é um projeto simples que demonstra como configurar testes automatizados com Jest e integração contínua usando GitHub Actions. Este projeto contém uma função básica que soma dois números, e o workflow do GitHub Actions roda testes automaticamente sempre que alterações são enviadas para o repositório.
+```md
+# Validar soma de dois números 📊
 
-🚀 Funcionalidade
-A função add(a, b) recebe dois números e retorna a soma deles.
+**Validar Soma* é um projeto simples que demonstra como configurar testes automatizados com **Jest** e integração contínua usando **GitHub Actions**. O projeto contém uma função básica que soma dois números, e o workflow do GitHub Actions executa testes automaticamente sempre que há um `push` ou `pull request` para a branch `main`.
 
-📋 Requisitos
-Node.js (v14 ou superior)
-Jest (framework de testes)
-🛠️ Instalação
-Clone o repositório e instale as dependências:
+## 🚀 Funcionalidade
 
-bash
-Copiar código
+A função `add(a, b)` recebe dois números e retorna a soma deles.
+
+## 📋 Requisitos
+
+- Node.js (v14 ou superior)
+- Jest (framework de testes)
+
+## 🛠️ Instalação
+
+Siga os passos abaixo para clonar o repositório e instalar as dependências:
+
+```bash
 git clone https://github.com/SEU_USUARIO/meu-primeiro-projeto.git
 cd meu-primeiro-projeto
 npm install
-🧪 Como Rodar os Testes
+```
+
+## 🧪 Como Rodar os Testes
+
 Você pode rodar os testes localmente usando o Jest:
 
-bash
-Copiar código
+```bash
 npm test
-Os testes também são executados automaticamente por meio do GitHub Actions sempre que houver um push ou pull request na branch main.
+```
 
-📄 Testes
-Teste: Verifica se add(1, 2) retorna 3.
+Os testes também são executados automaticamente por meio do **GitHub Actions** sempre que há um `push` ou `pull request` na branch `main`.
+
+## 📄 Testes
+
+- Teste: Verifica se `add(1, 2)` retorna `3`.
+
 Exemplo do teste:
 
-javascript
-Copiar código
+```javascript
 test('adds 1 + 2 to equal 3', () => {
     expect(add(1, 2)).toBe(3);
 });
-🖥️ GitHub Actions
-Este repositório usa GitHub Actions para integração contínua. O workflow executa o seguinte:
+```
 
-Instalação das dependências do Node.js.
-Execução dos testes automatizados.
-📦 Como Contribuir
-Fork este repositório.
-Crie uma nova branch: git checkout -b minha-nova-feature.
-Envie suas alterações: git commit -m 'Adiciona nova feature'.
-Faça o push da branch: git push origin minha-nova-feature.
-Abra um pull request.
+## 🖥️ GitHub Actions
+
+Este repositório usa **GitHub Actions** para integração contínua. O workflow executa os seguintes passos:
+
+1. Instalação das dependências do Node.js.
+2. Execução dos testes automatizados.
+
+## 📦 Como Contribuir
+
+1. Faça um fork deste repositório.
+2. Crie uma nova branch: `git checkout -b minha-nova-feature`.
+3. Envie suas alterações: `git commit -m 'Adiciona nova feature'`.
+4. Faça o push da branch: `git push origin minha-nova-feature`.
+5. Abra um pull request.
+
+```
+
